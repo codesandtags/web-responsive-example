@@ -1,10 +1,6 @@
-body {
-    font-family: Arial;
-    size: 14px;
-}
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 
 * {
-    border: 1px solid #aaa;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -77,6 +73,11 @@ body {
 and (min-device-width: 1200px)
 and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 1) {
+    .col-1, .col-2, .col-3, .col-4,
+    .col-5, .col-6, .col-7, .col-8,
+    .col-9, .col-10, .col-11, .col-12 {
+        background: #eeeeee;
+    }
 }
 
 /* ----------- Retina Screens ----------- */
@@ -85,6 +86,11 @@ and (min-device-width: 1200px)
 and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi) {
+    .col-1, .col-2, .col-3, .col-4,
+    .col-5, .col-6, .col-7, .col-8,
+    .col-9, .col-10, .col-11, .col-12 {
+        background: gold;
+    }
 }
 
 /* ----------- iPad mini ----------- */
@@ -94,7 +100,11 @@ and (min-resolution: 192dpi) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
-
+    .col-1, .col-2, .col-3, .col-4,
+    .col-5, .col-6, .col-7, .col-8,
+    .col-9, .col-10, .col-11, .col-12 {
+        background: #aaaaaa;
+    }
 }
 
 /* Portrait */
@@ -172,22 +182,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* ----------- Galaxy Tab 10.1 ----------- */
 
 /* Portrait and Landscape */
-@media
-(min-device-width: 800px)
+@media (min-device-width: 800px)
 and (max-device-width: 1280px) {
 
 }
 
 /* Portrait */
-@media
-(max-device-width: 800px)
+@media (max-device-width: 800px)
 and (orientation: portrait) {
 
 }
 
 /* Landscape */
-@media
-(max-device-width: 1280px)
+@media (max-device-width: 1280px)
 and (orientation: landscape) {
 
 }
@@ -200,7 +207,11 @@ and (device-width: 601px)
 and (device-height: 906px)
 and (-webkit-min-device-pixel-ratio: 1.331)
 and (-webkit-max-device-pixel-ratio: 1.332) {
-
+    .col-1, .col-2, .col-3, .col-4,
+    .col-5, .col-6, .col-7, .col-8,
+    .col-9, .col-10, .col-11, .col-12 {
+        background: deepskyblue;
+    }
 }
 
 /* Portrait */
@@ -500,15 +511,13 @@ and (orientation: landscape) {
 }
 
 /* ----------- Apple Watch ----------- */
-@media
-(max-device-width: 42mm)
+@media (max-device-width: 42mm)
 and (min-device-width: 38mm) {
 
 }
 
 /* ----------- Moto 360 Watch ----------- */
-@media
-(max-device-width: 218px)
+@media (max-device-width: 218px)
 and (max-device-height: 281px) {
 
 }
